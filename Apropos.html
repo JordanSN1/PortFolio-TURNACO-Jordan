@@ -7,9 +7,23 @@
     <title>A propos</title>
 </head>
 <body>
+	<script>
+		document.getElementById("download-button").addEventListener("click", function() {
+		  var fileUrl = "CV TURNACO Jordan STAGE.pdf";
+		  var xhr = new XMLHttpRequest();
+		  xhr.open("GET", fileUrl, true);
+		  xhr.responseType = "blob";
+		  xhr.onload = function() {
+			var blob = xhr.response;
+			var filename = "file.pdf";
+			saveAs(blob, filename);
+		  };
+		  xhr.send();
+		});
+	</script>
 		<nav>
 			<div class="profile">
-				<img src="Images/JordanTURNACO.png" alt="profile photo"/>
+				<img src="Images/TURNACO.png" alt="profile photo"/>
 				<h1><a href="Index.html">TURNACO Jordan</a></h1>
 			</div>
 			<ul>
