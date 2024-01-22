@@ -1,0 +1,111 @@
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>
+			Portfolio Turnaco Jordan
+		</title>
+	</head>
+	<body>
+		<script>
+			document.getElementById("download-button").addEventListener("click", function() {
+			  var fileUrl = "CV TURNACO Jordan STAGE.pdf";
+			  var xhr = new XMLHttpRequest();
+			  xhr.open("GET", fileUrl, true);
+			  xhr.responseType = "blob";
+			  xhr.onload = function() {
+				var blob = xhr.response;
+				var filename = "file.pdf";
+				saveAs(blob, filename);
+			  };
+			  xhr.send();
+			});
+		</script>
+		
+		<nav>
+			<div class="profile">
+				<img src="Images/JordanTURNACO.png" alt="profile photo"/>
+				<h1><a href="Index.html">TURNACO Jordan</a></h1>
+			</div>
+			<ul>
+				<li><a href="Apropos.html">A propos</a></li>
+				<li><a href="Projet.html">Mes projets</a></li>
+				<li><a href="../Projet PORTFOLIO Competence/CV TURNACO Jordan STAGE.pdf" id="download-button" download>Curriculum Vitae</a></li>
+				
+			</ul>
+		</nav>
+		
+		<section class="page-content">
+			<header>
+				<h1>Bonjour , Je suis apprenant a epsi. </h1>
+				<p>
+					Je suis TURNACO jordan , j'ai 18 ans et je suis passionné par l'informatique en général
+				</p>
+				<button onclick="location.href='More.html'">
+                    En savoir plus
+                </button>
+			</header>
+
+			<section class="presentation-image">
+				<img src="Images/Image_1_gestion_des_ITAM.png" alt="AI image" />
+			</section>
+
+			<section class="projects-section">
+				<h1>Projets réalisés / En cours de réalisation</h1>
+				<div class="projects">
+					<div class="project">
+						<h4>Le jeu du pendu</h4>
+						<p class="description">
+							Creation du jeu du pendu fait en python dans la console
+						</p>
+						<p class="dates">Dates 2022 - 2023</p>
+					</div>
+					<div class="project">
+						<h4>Smartrash</h4>
+						<p class="description">
+							Lors du workshop de debut d'année effectuer afin de se connaitre dans l'ecole epsi , mon groupe et moi avons creer une entreprise virtuelle de tri 
+						</p>
+						<p class="dates">Dates 2023 - 2024</p>
+					</div>
+					<div class="project">
+						<h4>Création d'un site pour SmartBike</h4>
+						<p class="description">
+							Projet de cours , Il consiste a faire un site en php totalement responsive
+						</p>
+						<p class="dates">Dates 2023 - 2024</p>
+					</div>
+					<div class="project">
+						<h4>Recconstitution de la Databases de twitch </h4>
+						<p class="description">
+							Lors d'un projets de cours le professeur nous a donner pour devoir de reconstituer la BDD de twitch , reduite a 50 table SQL 
+						</p>
+						<p class="dates">Dates 2023 - 2024</p>
+					</div>
+                    <div class="project">
+                        <h4>Pour plus d'information sur mes projets aller dans la categorie Mes projets</h4>
+                    </div>
+					
+					
+				</div>
+			</section>
+		</section>
+
+		<footer>
+			<div class="colonne">
+				<h3>Mes écoles frequenté </h3>
+				<p><a href="https://www.lyceevandongen.fr">Lycée vanDongen</a></p>
+				<p><a href="https://www.epsi.fr">EPSI écoles d'ingenierie informatioque</a></p>
+				
+			</div>
+			
+			<div class="colonne">
+				<h3>Mes adresses mails</h3>
+                <p>- Par ordre de frequentation -</p>
+				<p>jordanturnaco@gmail.com</p>
+				<p>jordan.turnaco.pro@gmail.com</p>
+				<p>jordan.turnaco@ecoles-epsi.net</p>
+			</div>
+		</footer>
+	</body>
