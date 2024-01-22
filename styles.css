@@ -6,6 +6,15 @@ body {
 	margin: 0;
 }
 
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
 nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,6 +24,7 @@ nav {
 	position: sticky;
 	top: 0;
 }
+
 nav .profile {
 	display: flex;
 	align-items: center;
@@ -139,6 +149,68 @@ nav ul li a {
 	font-size: 13px;
 	color: rgb(145, 145, 145);
 }
+.Description {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.Description h2 {
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.Description h3 {
+    color: #2C3E50;
+    margin-top: 20px;
+}
+
+.Description strong {
+    color: #3498DB;
+}
+
+.Description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Description li {
+    margin-bottom: 5px;
+}
+
+.Description p {
+    margin-bottom: 10px;
+}
+
+.Description p strong {
+    font-weight: bold;
+}
+
+.Description a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Description a:hover {
+    text-decoration: underline;
+}
+.cv-button {
+    background-color: #554a91;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #452f73;
+}
+
 
 footer {
 	margin-top: 5%;
