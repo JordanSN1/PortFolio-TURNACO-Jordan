@@ -148,23 +148,23 @@ nav ul li a {
 	font-size: 13px;
 	color: rgb(145, 145, 145);
 }
-.Description {
+.page-content .Description {
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.Description h1 {
+.page-content .Description h1 {
     color: #452f73;
 }
 
-.Description h2 {
+.page-content .Description h2 {
     color: #452f73;
     margin-bottom: 10px;
 }
 
-.Description h3 {
+.page-content .Description h3 {
     color: #452f73;
     margin-top: 20px;
 }
@@ -245,7 +245,18 @@ footer .colonne p a {
 footer .colonne p:hover {
 	color: #fff;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    color: #554a91;
+}
+li{
+	text-decoration: #554a91;
+}
+li strong{
+	color: #554a91;
+}
+p strong{
+	color: #554a91;
+}
 @media screen and (max-width: 700px) {
 	nav {
 		justify-content: center;
