@@ -196,7 +196,7 @@ nav ul li a {
 .cv-button {
     background-color: #554a91;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -209,15 +209,42 @@ nav ul li a {
     background-color: #452f73;
 }
 
+.Download_Button {
+	background-color: #554a91;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+	text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Download_Button:hover {
+    background-color: #452f73;
+}
+.ButtonProjet{
+	display: flex;
+	justify-content: center; 
+    align-items: center; 
+
+}
+li{
+	margin: 10px;
+}
+.Ecole{
+	margin-top: 50px;
+}
+
 .YoutubeVideo {
     display: flex;
     justify-content: center; 
     align-items: center; 
+	margin: 20px;
 }
 
 .YoutubeVideo iframe {
-    aspect-ratio: 19/9;
-    
+    aspect-ratio: 19/9; 
 }
 
 footer {

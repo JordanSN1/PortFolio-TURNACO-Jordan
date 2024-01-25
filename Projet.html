@@ -20,6 +20,18 @@
 		  };
 		  xhr.send();
 		});
+		document.getElementById("PowerPointVelo").addEventListener("click", function() {
+		  var fileUrl = "SmartBike.pptx";
+		  var xhr = new XMLHttpRequest();
+		  xhr.open("GET", fileUrl, true);
+		  xhr.responseType = "blob";
+		  xhr.onload = function() {
+			var blob = xhr.response;
+			var filename = "file.pptx";
+			saveAs(blob, filename);
+		  };
+		  xhr.send();
+		});
 	</script>
 	
 	<nav>
@@ -30,14 +42,45 @@
 		<ul>
 			<li><a href="Apropos.html">A propos</a></li>
 			<li><a href="Projet.html">Mes projets</a></li>
-			<li><a href="CV TURNACO Jordan STAGE.pdf" id="download-button" download>Curriculum Vitae</a></li>
+			<li><a class="cv-button" href="CV TURNACO Jordan STAGE.pdf" id="download-button" download>Curriculum Vitae</a></li>
 				
 			</ul>
 		</nav>
-		<div class="YoutubeVideo">
-			<iframe width="50%" src="https://www.youtube.com/embed/shyJE-wc9gg" frameborder="0" allowfullscreen></iframe>
-		</div>
-		
+		<section class = "projet 1">
+			<p><h1>Projet n°1 : Smartrash</h1></p>
+
+			<div class="YoutubeVideo">
+				<iframe width="50%" src="https://www.youtube.com/embed/shyJE-wc9gg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<container class="ButtonProjet">
+				<a class="Download_Button" id="PowerPointVelo" href="SmartBike.pptx" download="">PowerPoint</a>
+			</container>
+			
+		</section>
+		<section class = "projet 2">
+			<p><h1>Projet n°2 : Conception de la base de donnée de twitch</h1></p>
+
+			<div class="YoutubeVideo">
+				<iframe width="50%" src="https://www.youtube.com/embed/eWNU3rnjrZo?si=5zqJv614BJuxTSx2" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+		</section>
+		<section class = "projet 3">
+			<p><h1>Projet n°3 : Smartbike </h1></p>
+
+			<div class="YoutubeVideo">
+				<iframe width="50%" src="https://www.youtube.com/embed/0otOZb0bnvQ?si=ll2PZQ6v_kU1p4cT" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+		</section>
+		<section class = "projet 4">
+			<p><h1>Projet n°4 : Jeu du pendu en python</h1></p>
+=
+			<div class="YoutubeVideo">
+				<iframe width="50%" src="https://www.youtube.com/embed/tLuav7l20qs?si=MlHSl6vZikb-3r3Z" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+		</section>
 		<footer>
 			<div class="colonne">
 				<h3>Mes écoles frequenté </h3>
