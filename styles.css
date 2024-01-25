@@ -208,6 +208,11 @@ nav ul li a {
 .cv-button:hover {
     background-color: #452f73;
 }
+.projet_1,.projet_2,.projet_3,.projet_4{
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+}
 
 .Download_Button {
 	background-color: #554a91;
