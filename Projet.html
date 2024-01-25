@@ -32,6 +32,30 @@
 		  };
 		  xhr.send();
 		});
+		document.getElementById("PowerPointTwitch").addEventListener("click", function() {
+		  var fileUrl = "SmartBike.pptx";
+		  var xhr = new XMLHttpRequest();
+		  xhr.open("GET", fileUrl, true);
+		  xhr.responseType = "blob";
+		  xhr.onload = function() {
+			var blob = xhr.response;
+			var filename = "file.pptx";
+			saveAs(blob, filename);
+		  };
+		  xhr.send();
+		});
+		document.getElementById("CodeSourcePendu").addEventListener("click", function() {
+		  var fileUrl = "JeuPenduPython.zip";
+		  var xhr = new XMLHttpRequest();
+		  xhr.open("GET", fileUrl, true);
+		  xhr.responseType = "blob";
+		  xhr.onload = function() {
+			var blob = xhr.response;
+			var filename = "file.zip";
+			saveAs(blob, filename);
+		  };
+		  xhr.send();
+		});
 	</script>
 	
 	<nav>
@@ -52,9 +76,6 @@
 			<div class="YoutubeVideo">
 				<iframe width="50%" src="https://www.youtube.com/embed/shyJE-wc9gg" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<container class="ButtonProjet">
-				<a class="Download_Button" id="PowerPointVelo" href="SmartBike.pptx" download="">PowerPoint</a>
-			</container>
 			
 		</section>
 		<section class = "projet 2">
@@ -63,6 +84,9 @@
 			<div class="YoutubeVideo">
 				<iframe width="50%" src="https://www.youtube.com/embed/eWNU3rnjrZo?si=5zqJv614BJuxTSx2" frameborder="0" allowfullscreen></iframe>
 			</div>
+			<container class="ButtonProjet">
+				<a class="Download_Button" id="PowerPointTwitch" href="TWITCH_Présentation.pptx" download>Présentation du projet Twitch</a>
+			</container>
 
 		</section>
 		<section class = "projet 3">
@@ -71,15 +95,19 @@
 			<div class="YoutubeVideo">
 				<iframe width="50%" src="https://www.youtube.com/embed/0otOZb0bnvQ?si=ll2PZQ6v_kU1p4cT" frameborder="0" allowfullscreen></iframe>
 			</div>
+			<container class="ButtonProjet">
+				<a class="Download_Button" id="PowerPointVelo" href="SmartBike.pptx" download>Présentation du projet SmartBike</a>
+			</container>
 
 		</section>
 		<section class = "projet 4">
 			<p><h1>Projet n°4 : Jeu du pendu en python</h1></p>
-=
 			<div class="YoutubeVideo">
 				<iframe width="50%" src="https://www.youtube.com/embed/tLuav7l20qs?si=MlHSl6vZikb-3r3Z" frameborder="0" allowfullscreen></iframe>
 			</div>
-
+			<container class="ButtonProjet">
+				<a class="Download_Button" id="CodeSourcePendu" href="JeuPenduPython.zip" download>Code Source du jeu </a>
+			</container>
 		</section>
 		<footer>
 			<div class="colonne">
