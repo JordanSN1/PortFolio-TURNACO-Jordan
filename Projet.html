@@ -56,7 +56,20 @@
 		  };
 		  xhr.send();
 		});
-	</script>
+
+        function copyToClipboard(text) {
+            var tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput)
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Texte copié !");
+        }
+    </script>
+
+	
+	
 	
 	<nav>
 		<div class="profile">
@@ -117,12 +130,13 @@
 				
 			</div>
 			
-			<div class="colonne">
+			
+			<div class="colonne" id="adresse-mails">
 				<h3>Mes adresses mails</h3>
-                <p>- Par ordre de frequentation -</p>
-				<p>jordanturnaco@gmail.com</p>
-				<p>jordan.turnaco.pro@gmail.com</p>
-				<p>jordan.turnaco@ecoles-epsi.net</p>
+				<p>- Par ordre de fréquentation -</p>
+				<p><span onclick="copyToClipboard('jordanturnaco@gmail.com')">jordanturnaco@gmail.com</span></p>
+				<p><span onclick="copyToClipboard('jordan.turnaco.pro@gmail.com')">jordan.turnaco.pro@gmail.com</span></p>
+				<p><span onclick="copyToClipboard('jordan.turnaco@ecoles-epsi.net')">jordan.turnaco@ecoles-epsi.net</span></p>
 			</div>
 		</footer>
 </body>
