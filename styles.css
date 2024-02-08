@@ -193,7 +193,7 @@ nav ul li a {
 .Description a:hover {
     text-decoration: underline;
 }
-.cv-button {
+.project-button {
     background-color: #554a91;
     color: #ffffff;
     padding: 5px 10px;
@@ -205,7 +205,7 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-.cv-button:hover {
+.project-button:hover {
     background-color: #452f73;
 }
 .projet_1,.projet_2,.projet_3,.projet_4{
